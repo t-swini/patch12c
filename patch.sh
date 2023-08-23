@@ -3,7 +3,7 @@ ORACLE_HOME=/u01/app/oracle/may23/middleware
 PATCHPATH=/u01/app/oracle/may23/middleware/patches
 LOG=/u01/app/oracle/may23/middleware/cfgtoollogs/opatch
 rm -f $LOG/opatch`date +%Y-%m-%d_%H`*.log
-cp patche12c/*Generic.zip $PATCHPATH
+cp patch12c/*Generic.zip $PATCHPATH
 $ORACLE_HOME/OPatch/opatch lsinventory
 DATE=`date +%Y-%m-%d_%H`
 cd  $PATCHPATH
